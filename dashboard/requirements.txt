@@ -4,4 +4,3 @@ numpy
 plotly
 mysql-connector-python
 python-dotenv
-sqlalchemy
