@@ -1,0 +1,17 @@
+USE sanjose_police_calls;
+
+SET SQL_SAFE_UPDATES = 0;
+
+-- Trim whitespace + convert empty strings to NULL
+UPDATE policecalls2025_2
+SET
+  START_DATE   = NULLIF(TRIM(START_DATE), ''),
+  REPORT_DATE  = NULLIF(TRIM(REPORT_DATE), ''),
+  OFFENSE_DATE = NULLIF(TRIM(OFFENSE_DATE), ''),
+  OFFENSE_TIME = NULLIF(TRIM(OFFENSE_TIME), ''),
+  CALL_TYPE    = NULLIF(TRIM(CALL_TYPE), ''),
+  CITY         = NULLIF(TRIM(CITY), ''),
+  STATE        = NULLIF(TRIM(STATE), ''),
+  ADDRESS      = NULLIF(TRIM(ADDRESS), ''),
+  PRIORITY     = NULLIF(TRIM(PRIORITY), ''),
+  CALL_NUMBER  = NULLIF(TRIM(CALL_NUMBER), '');
