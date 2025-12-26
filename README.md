@@ -16,8 +16,6 @@ San José Safe Zones is an end-to-end data engineering and analytics project tha
     SanJose-SafeZones/
     │
     ├── README.md
-    ├── LICENSE
-    ├── .gitignore
     │
     ├── sql/
     │   ├── 01_schema_creation.sql
@@ -60,6 +58,70 @@ San José Safe Zones is an end-to-end data engineering and analytics project tha
       dim_calltype — call type code → description
       dim_disposition — disposition code → description
 
-  
+  # Data Cleaning and Processing
+
+Issues Identified
+    - Inconsistent date-time formats
+    - Leading/trailing whitespace
+    - Empty strings vs NULL
+    - Mixed data types (e.g., priority stored as text)
+    - Redundant descriptive fields
+
+Cleaning Steps
+    - Standardized all timestamps using STR_TO_DATE + regex
+    - Trimmed whitespace across all text fields
+    - Converted empty strings → NULL
+    - Casted numeric fields
+    - Extracted unique call types & dispositions into dimension tables
+
+# 📈 SQL Analytics
+
+Basic Queries
+    - Daily call volume
+    - Top 10 call types
+    - Average priority by disposition
+    - Call volume by zip code
+    - Average response time by priority
+
+Advanced Queries
+    - Hotspot detection (Top 15 severe addresses)
+    - 7‑day rolling averages
+    - Month‑over‑month trends with running totals
+    - Reusable disposition performance view
+    - Index optimization analysis
+    - Predictive risk scoring (180‑day weighted model)
+    - Percentile analysis (P50–P99)
+    - Cross‑tab heatmap (hour × day)
+    - Pareto analysis (80/20 rule)
+    - Incident co‑occurrence detection
+
+# 📊 Interactive Dashboard (Streamlit)
+
+1. Install dependencies
+
+       pip install -r dashboard/requirements.txt
+
+2. Launch Streamlit
+
+        streamlit run dashboard/app.py
+
+
+# 📘 Documentation
+
+Full project report:
+    
+    /docs/final_report.pdf
+
+ER Diagram:
+    
+    /docs/ERD.png
+
+
+# 👨‍💻 Author
+Sai Teja Sri Sanjana Thummalapalli
+
+For questions or feedback about this project, please contact through GitHub issues.
+
+
 
 
