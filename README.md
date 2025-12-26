@@ -4,6 +4,17 @@ Police Calls Data Engineering, Analytics & Interactive Dashboard
 # ✨ OVERVIEW
 San José Safe Zones is an end-to-end data engineering and analytics project that transforms raw San José Police Calls for Service (2025) data into a fully cleaned, normalized, and query-optimized relational database. It then applies advanced SQL analytics to identify safer residential zones, detect incident hotspots, and uncover temporal and spatial patterns in police activity. An interactive Streamlit dashboard brings these insights to life with dynamic visualizations powered by Plotly.
 
+# 📂 Dataset Source
+This project uses the San José Police Calls for Service dataset published by the City of San José Open Data Portal. The dataset is updated daily and contains detailed records of police call incidents, including timestamps, call types, dispositions, and location information.
+
+   Official dataset links
+
+      -- San Jose Police Calls for Service (Year 2025)
+      https://data.sanjoseca.gov/dataset/police-calls-for-service/resource/0bc5ea69-fcc7-4998-ab6c-70c3a0df778b
+      
+      -- Police-Calls-for-Service (All Years)
+      https://data.sanjoseca.gov/dataset/police-calls-for-service
+
 # 🧱 Tech Stack
     Database - MySQL 
     Data Processing - SQL, Python
