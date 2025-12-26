@@ -1,10 +1,10 @@
 # SanJose-SafeZones
 Police Calls Data Engineering, Analytics & Interactive Dashboard
 
-# OVERVIEW
+# ✨ OVERVIEW
 San José Safe Zones is an end-to-end data engineering and analytics project that transforms raw San José Police Calls for Service (2025) data into a fully cleaned, normalized, and query-optimized relational database. It then applies advanced SQL analytics to identify safer residential zones, detect incident hotspots, and uncover temporal and spatial patterns in police activity. An interactive Streamlit dashboard brings these insights to life with dynamic visualizations powered by Plotly.
 
-# Tech Stack
+# 🧱 Tech Stack
     Database - MySQL 
     Data Processing - SQL, Python
     Visualization - Plotly, Streamlit
@@ -58,7 +58,7 @@ San José Safe Zones is an end-to-end data engineering and analytics project tha
       dim_calltype — call type code → description
       dim_disposition — disposition code → description
 
-  # Data Cleaning and Processing
+  # 🧹 Data Cleaning and Processing
 
 Issues Identified
     - Inconsistent date-time formats
